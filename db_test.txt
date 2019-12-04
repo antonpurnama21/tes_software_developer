@@ -1,0 +1,77 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 04, 2019 at 12:31 PM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `db_test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trafic`
+--
+
+CREATE TABLE IF NOT EXISTS `trafic` (
+`id` int(11) NOT NULL,
+  `date` varchar(255) DEFAULT NULL,
+  `label` varchar(255) DEFAULT NULL,
+  `nb_visits` int(11) DEFAULT NULL,
+  `nb_hits` int(11) DEFAULT NULL,
+  `sum_time_spent` int(11) DEFAULT NULL,
+  `nb_hits_with_time_generation` int(11) DEFAULT NULL,
+  `sum_daily_exit_nb_uniq_visitors` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `trafic`
+--
+
+INSERT INTO `trafic` (`id`, `date`, `label`, `nb_visits`, `nb_hits`, `sum_time_spent`, `nb_hits_with_time_generation`, `sum_daily_exit_nb_uniq_visitors`) VALUES
+(1, '2017-02', 'null', 0, 0, 0, 0, 0),
+(2, '2017-03', 'null', 0, 0, 0, 0, 0),
+(3, '2017-04', 'null', 0, 0, 0, 0, 0),
+(4, '2017-05', ' BebasBayar | Menu Favorit', 1564, 2033, 69711, 1392, 121),
+(5, '2017-06', ' BebasBayar | Menu Favorit', 1956, 2605, 92056, 1850, 174),
+(6, '2017-08', ' BebasBayar | Menu Favorit', 1920, 2492, 91991, 1719, 226),
+(7, '2017-09', ' BebasBayar | Menu Favorit', 1730, 2212, 76546, 1532, 197),
+(8, '2017-10', ' BebasBayar | Menu Favorit', 1688, 2274, 99468, 1599, 157),
+(9, '2017-11', ' BebasBayar | Menu Favorit', 1485, 1903, 73092, 1327, 138),
+(10, '2017-12', ' BebasBayar | Menu Favorit', 1278, 1592, 50637, 1000, 132);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `trafic`
+--
+ALTER TABLE `trafic`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `trafic`
+--
+ALTER TABLE `trafic`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
